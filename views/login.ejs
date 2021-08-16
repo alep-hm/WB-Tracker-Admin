@@ -1,0 +1,44 @@
+<header>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#" style="color:rgb(23, 103, 252)">  <img src="/img/water1.png" width="20" height="30" class="d-inline-block align-top" alt="">
+         Water Bill Tracker - JKR Brunei</a>
+     
+    </nav>
+   </header>
+  
+  <div class="row mt-5">
+      <div class="col-md-5 m-auto">
+        <div class="card card-body">
+          <h1 class="text-center mb-3"><img src="/img/water1.png" width="100" height="80" class="d-inline-block align-top" alt=""></i>  Login</h1>
+          <%- include ("./partials/messages"); %>
+          <form action="/users/login" method="POST">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="form-control"
+                placeholder="Enter Password"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+          </form>
+          <p class="lead mt-4">
+            <a href="/regadmin">Register Admin</a>
+          </p>
+        </div>
+      </div>
+    </div>
+      
